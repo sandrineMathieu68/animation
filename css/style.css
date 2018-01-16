@@ -1,0 +1,123 @@
+body{
+  background: #C6BAB9;
+  margin: 0;
+}
+#oiseau{
+    margin-left: 93%;
+    margin-bottom: -180px;
+
+}
+#oiseau1{
+    margin-left: -20px;
+    margin-bottom: -200px;
+
+}
+h2{
+    color: #EF73D5;
+    position: relative;
+    margin-top: 200px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-size: 4em;
+    font-family: 'Mountains of Christmas';
+    text-shadow: 0px 0px 8px rgba(224,64,43,1);
+}
+
+#cadre{
+    background-color: white;
+    padding-bottom: 50px;
+
+}
+
+#wire{
+    text-align: center;
+    white-space: nowrap;
+    padding: 0;
+    width: 100%;
+    top: -80px;
+    border-bottom: 3px solid #234;
+    height: 100px;
+ }
+
+ #wire li {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 15px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0px 15px;
+    top: 102px;
+    display: inline-block;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+    animation-name: even-flash;
+}
+
+ #wire li:nth-child(odd){
+     animation-name: odd-flash;
+ }
+
+#wire li:before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 10px;
+    border-radius: 4px;
+    top: -5px;
+    left: 0px;
+    background: #444;
+}
+
+@keyframes even-flash {
+    0%, 100% {
+        background: rgba(255,230,65,1);
+        box-shadow: 0px 2px 20px 4px rgba(255,230,65,1);
+    }
+    50% {
+        background: rgba(255,230,65,0.5);
+        box-shadow: 0px 2px 20px 4px rgba(255,230,65,0.3);
+    }
+}
+
+@keyframes odd-flash {
+    50% {
+        background: rgba(255,65,185,1);
+        box-shadow: 0px 2px 20px 4px rgba(255,65,185,1);
+    }
+    0%,100% {
+        background: rgba(255,65,185,0.5);
+        box-shadow: 0px 2px 20px 4px rgba(255,65,185,0.3);
+    }
+}
+
+#suite{
+
+}
+
+.test{
+    position: absolute;
+
+    left: 650px;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #999;
+    transition: transform 3s;
+}
+.test.right{
+    transform: translateX(500px); 
+}
+
+
+        .circle {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000;
+            position: absolute;
+            border-radius: 15px;
+        }
